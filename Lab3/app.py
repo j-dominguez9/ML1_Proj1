@@ -1,9 +1,7 @@
 from shiny import ui, render, App
-from matplotlib import pyplot as plt
-from pathlib import Path
 import pandas as pd
 import seaborn as sns
-from sklearn.cluster import KMeans
+
 
 choices = {"a": "Age", "b": "Income", "c": "Hours Worked", "d": "Education", "e": "Race", "f": "Marital Status", "g": "Gender", "h": "Work Class"}
 
@@ -23,7 +21,7 @@ app_ui = ui.page_fluid(
                 To obtain a better understanding of how
                 the clusters are grouping different attributes, please 
                 explore the most important 
-                variables in the logistic regression classification of income.
+                variables.
                 """,
             ),
         ),
